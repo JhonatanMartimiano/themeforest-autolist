@@ -1,0 +1,126 @@
+///////////////////////////////////////////////
+
+Updated Date : Feb 27th 2019
+-------------------------------------------------
+Updates : 
+1. Add Mobile Header sticky
+2. RTL Horizontal-menu index issues Fixed
+3. RangeSlider darg event not working in mobile issue fixed
+
+
+Please Follow Below Guidelines.
+
+
+
+---------------------- 1. Mobile Header sticky ---------------------------
+
+1. Please Replace the sticky.js file (assets/js/sticky.js)  LTR&RTL
+
+2. Please add the below code in style.css & style-rtl.css (assets/css/ style.css)  & (assets/css/ style-rtl.css)  
+
+style.css:
+	
+  1.Please add the below code line no:18243
+	
+	old:
+	    .sticky-wrapper {
+		position:relative !important;
+	    }
+
+	new: 
+	  .sticky-wrapper {
+		height: 0 !important;
+		position:relative !important;
+	  }
+
+	
+  2.Please replace the below code line no:18239 (padding:3rem to 6 rem)
+	
+	old: 
+	    .bannerimg {
+		padding: 3rem 0 3rem 0 !important;
+		background-size: cover;
+	    }
+	    
+	new :
+	    .bannerimg {
+		padding: 6rem 0 3rem 0 !important;
+		background-size: cover;
+	    }
+
+  3.Please Replace the below code line no:17804 (padding-top:2rem to 4.5rem)
+	
+	old:
+	    .banner-2.sptb-2 {
+		padding-top: 2rem  !important;
+		padding-bottom: 6rem !important;
+	    }
+
+	new:
+	   .banner-2.sptb-2 {
+		padding-top: 4.5rem  !important;
+		padding-bottom: 6rem !important;
+	   }
+
+
+style-rtl.css:
+	
+   1.Please add the below code line no:18129
+	
+	old:
+	    .sticky-wrapper {
+		position:relative !important;
+	    }
+
+	new: 
+	   .sticky-wrapper {
+		height: 0 !important;
+		position:relative !important;
+	   }
+
+   2.Please replace the below code line no:18125 (padding:3rem to 6 rem)
+	
+	old: 
+	  .bannerimg {
+		padding: 3rem 0 3rem 0 !important;
+		background-size: cover;
+	  }
+
+	new :
+	    .bannerimg {
+		padding: 6rem 0 3rem 0 !important;
+		background-size: cover;
+	  }
+
+   3.Please Replace the below code line no:16970 (padding-top:2rem to 4.5rem)
+	
+	old:
+	    .banner-2.sptb-2 {
+		padding-top: 2rem  !important;
+		padding-bottom: 6rem !important;
+	    }
+
+	new:
+	    .banner-2.sptb-2 {
+		padding-top: 4.5rem  !important;
+		padding-bottom: 6rem !important;
+	   }
+
+
+3. Please Replace the horizontal-menu.css file in both LTR & RTL  (assets/plugins/horizontal-menu/horizontal.css) & (assets/plugins/horizontal-menu/horizontal-rtl.css)
+
+
+
+---------------------- 2. RTL Horizontal-menu index not working issues fixed ---------------------------
+
+1.   Please  replace the below link in index.html page at  header section (LTR & RTL folder)
+
+Old: <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+New: <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+
+
+
+---------------------- 3. RangeSlider darg event not working in mobile issues fixed ---------------------------
+
+1.	Please add the new  jquery.ui.touch-punch.min.js file in you Plugin folder (assets/plugins/ jquery-uislider/jquery.ui.touch-punch.min.js (LTR & RTL Folder) )  and 
+ add  the link  in all html page at script section please check the image (rangeslider.jpg)
